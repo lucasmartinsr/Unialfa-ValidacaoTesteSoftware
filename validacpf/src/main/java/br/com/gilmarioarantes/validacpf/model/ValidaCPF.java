@@ -52,6 +52,9 @@ public class ValidaCPF {
 
         int primeiroDigito = (11-(soma%11));
 
+        //Caso o primeiro dígito seja maior que nove, o dígito verificado deve ser zero.
+        primeiroDigito = primeiroDigito > 9 ? 0 : primeiroDigito;
+
         //Cálculo do segundo dígito
         soma = 0;
         for(int i = 0; i < numerosCpf.length-1; i++){
@@ -59,6 +62,8 @@ public class ValidaCPF {
         }
 
         int segundoDigito = (11-(soma%11));
+        
+        segundoDigito = segundoDigito > 9 ? 0 : segundoDigito;
 
         result = (primeiroDigito == numerosCpf[9]) && (segundoDigito ==  numerosCpf[10]);
 
