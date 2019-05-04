@@ -71,4 +71,17 @@ public class ExclusaoTeste {
         }
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void deletaAlunoAlfaTest(){
+        System.out.println("Executando o método deletaAlunoAlfaTest() da classe: " + this.getClass().getSimpleName());
+        boolean result;
+        try {
+            result = new DeletaAluno().deletaAluno(new Long(48));
+        } catch (Exception e){
+            result = false;
+            e.printStackTrace();
+        }
+        Assert.assertTrue(result);
+    }
 }

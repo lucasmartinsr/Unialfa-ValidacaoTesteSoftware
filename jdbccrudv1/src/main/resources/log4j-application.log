@@ -24741,3 +24741,12 @@ ALTER TABLE ALUNOS_TURMAS ADD FOREIGN KEY (TURMA) REFERENCES TURMAS(ID_TURMA) ON
 2019-05-04 13:51:39 INFO  ConsultaCurso:31 - A Consulta do curso pelo seu Id foi bem sucedida!
 2019-05-04 13:51:39 INFO  AlteraDisciplina:56 - Executando o m�todo alteraCurso() da classe: AlteraDisciplina
 2019-05-04 13:51:39 INFO  AlteraDisciplina:65 - O curso da disciplina [Novo nome ]foi alterado corretamente!
+2019-05-04 14:09:15 INFO  PersisteAluno:26 - O Aluno [Lucas Martins] foi persistido corretamente.
+2019-05-04 14:11:29 INFO  ConsultaAluno:19 - Executando o método consultaPorId() da classe: ConsultaAluno
+2019-05-04 14:11:30 INFO  ConsultaAluno:38 - A consulta de aluno por id foi bem sucedida!
+2019-05-04 14:11:54 INFO  ConsultaAluno:19 - Executando o método consultaPorId() da classe: ConsultaAluno
+2019-05-04 14:11:55 INFO  ConsultaAluno:38 - A consulta de aluno por id foi bem sucedida!
+2019-05-04 14:12:05 INFO  PersisteAlunoTeste:41 - Executando o método persisteAlunoAlfaTest() da classe: PersisteAlunoTeste
+2019-05-04 14:12:06 INFO  PersisteAluno:26 - O Aluno [Lucas Martins] foi persistido corretamente.
+2019-05-04 14:12:20 INFO  ConsultaAluno:19 - Executando o método consultaPorId() da classe: ConsultaAluno
+2019-05-04 14:12:21 INFO  ConsultaAluno:38 - A consulta de aluno por id foi bem sucedida!
