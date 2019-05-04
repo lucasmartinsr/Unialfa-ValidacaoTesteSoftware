@@ -8,17 +8,17 @@
     </test>
     <test name="Test2">
         <classes>
-            <class name="br.com.gilmarioarantes.crudspringbottest.ConsultaEnderecoTest"></class>
+            <class name="br.com.alfa.lucas.ConsultaEnderecoTest"></class>
         </classes>
     </test>
     <test name="Test3">
         <classes>
-            <class name="br.com.gilmarioarantes.crudspringbottest.ValidaCPFTest"></class>
+            <class name="br.com.alfa.lucas.ValidaCPFTest"></class>
         </classes>
     </test>
     <test name="Test4">
         <classes>
-            <class name="br.com.gilmarioarantes.crudspringbottest.GeraSenhaTest"></class>
+            <class name="br.com.alfa.lucas.GeraSenhaTest"></class>
         </classes>
     </test>
 </suite>

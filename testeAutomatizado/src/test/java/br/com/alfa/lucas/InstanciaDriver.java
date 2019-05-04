@@ -1,11 +1,9 @@
-package br.com.gilmarioarantes.crudspringbottest;
+package br.com.alfa.lucas;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-/**
- * Created by gilmario on 20/03/17.
- */
+
 public class InstanciaDriver {
 
     public static WebDriver getDriver() {

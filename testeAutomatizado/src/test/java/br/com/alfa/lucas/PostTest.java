@@ -1,4 +1,4 @@
-package br.com.gilmarioarantes.crudspringbottest;
+package br.com.alfa.lucas;
 
 
 import java.util.concurrent.TimeUnit;
