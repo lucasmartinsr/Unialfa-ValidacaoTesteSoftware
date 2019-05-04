@@ -18,11 +18,6 @@ public class ValidaCPFTeste {
     }
 
     @Test
-    public void testaCPFNumerosIguais(){
-        Assert.assertFalse(app.isCPF("11111111111"));
-    }
-
-    @Test
     public void testaCPFValido(){
         Assert.assertTrue(app.isCPF("191"));
     }
@@ -36,4 +31,15 @@ public class ValidaCPFTeste {
     public void testaCPFValido2(){
         Assert.assertTrue(app.isCPF("33462461168"));
     }
+
+    @Test
+    public void testaCPFNumerosIguais(){
+        Assert.assertFalse(app.isCPF("11111111111"));
+    }
+
+    @Test
+    public void testaCPFNumerosIguais1(){ Assert.assertFalse(app.isCPF("00000000000"));}
+
+    @Test
+    public void testaCPFNumerosIguais2(){ Assert.assertFalse(app.isCPF("22222222222"));}
 }

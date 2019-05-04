@@ -9,6 +9,11 @@ public class ValidaCPF {
         int quantidadeZeros = 11 - cpf.length();
         int soma = 0;
 
+        //valida se a quantidade de dígitos informados é maior de 11
+        if(cpf.length() > 11){
+            return result;
+        }
+
         //validar se existe algum caracter que não seja dígito
         for(int i = 0; i < cpf.length(); i++){
             if(!Character.isDigit(cpf.charAt(i))){
@@ -26,10 +31,7 @@ public class ValidaCPF {
             j++;
         }
 
-        //valida se a quantidade de dígitos informados é maior de 11
-        if(cpf.length() > 11){
-            return result;
-        }
+
 
         //valida se todos os números são iguais
         if(numerosCpf[0] == numerosCpf[1] &&
@@ -50,10 +52,14 @@ public class ValidaCPF {
             soma += numerosCpf[i] * (10-i);
         }
 
-        int primeiroDigito = (11-(soma%11));
+        int restoDivisaoPrimeiroDigito = (soma%11);
 
-        //Caso o primeiro dígito seja maior que nove, o dígito verificado deve ser zero.
-        primeiroDigito = primeiroDigito > 9 ? 0 : primeiroDigito;
+        int primeiroDigito = 0;
+        if(restoDivisaoPrimeiroDigito < 2){
+            primeiroDigito = 0;
+        }else{
+            primeiroDigito = 11 - restoDivisaoPrimeiroDigito;
+        }
 
         //Cálculo do segundo dígito
         soma = 0;
@@ -61,9 +67,14 @@ public class ValidaCPF {
             soma += numerosCpf[i] * (11-i);
         }
 
-        int segundoDigito = (11-(soma%11));
-        
-        segundoDigito = segundoDigito > 9 ? 0 : segundoDigito;
+        int restoDivisaoSegundoDigito = (soma%11);
+
+        int segundoDigito = 0;
+        if(restoDivisaoSegundoDigito < 2){
+            segundoDigito = 0;
+        }else{
+            segundoDigito = 11 - restoDivisaoSegundoDigito;
+        }
 
         result = (primeiroDigito == numerosCpf[9]) && (segundoDigito ==  numerosCpf[10]);
 
