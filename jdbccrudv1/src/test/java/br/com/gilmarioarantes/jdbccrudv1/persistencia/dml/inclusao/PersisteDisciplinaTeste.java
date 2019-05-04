@@ -41,4 +41,24 @@ public class PersisteDisciplinaTeste {
         }
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void persisteDisciplinaAlfaTest(){
+        logger.info("Executando o método persisteDisciplinaAlfaTest() da classe: " + this.getClass().getSimpleName());
+
+        boolean result = false;
+
+        try{
+            Disciplina disciplina =  new Disciplina((long)43, "Validação e Teste de Software", 64.0);
+            Curso curso = new ConsultaCurso().consultaPorId(new Long(1));
+            if(curso != null) {
+                disciplina.setCurso(curso);
+                result = new PersisteDisciplina().persisteDisciplina(disciplina);
+            }
+        }catch (Exception e){
+                logger.error("Erro ao persistir a disciplina alfa!", e);
+        }
+
+        Assert.assertTrue(result);
+    }
 }

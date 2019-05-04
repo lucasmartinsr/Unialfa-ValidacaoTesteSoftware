@@ -24750,3 +24750,15 @@ ALTER TABLE ALUNOS_TURMAS ADD FOREIGN KEY (TURMA) REFERENCES TURMAS(ID_TURMA) ON
 2019-05-04 14:12:06 INFO  PersisteAluno:26 - O Aluno [Lucas Martins] foi persistido corretamente.
 2019-05-04 14:12:20 INFO  ConsultaAluno:19 - Executando o método consultaPorId() da classe: ConsultaAluno
 2019-05-04 14:12:21 INFO  ConsultaAluno:38 - A consulta de aluno por id foi bem sucedida!
+2019-05-04 14:27:26 INFO  PersisteDisciplinaTeste:47 - Executando o método persisteDisciplinaAlfaTest() da classe: PersisteDisciplinaTeste
+2019-05-04 14:27:26 INFO  ConsultaCurso:17 - Executando o método consultaPorId() da classe: ConsultaCurso
+2019-05-04 14:27:26 INFO  ConsultaCurso:31 - A Consulta do curso pelo seu Id foi bem sucedida!
+2019-05-04 14:27:26 INFO  PersisteDisciplina:13 - Executando o método persisteDisciplina() da classe; PersisteDisciplina
+2019-05-04 14:27:26 INFO  PersisteDisciplina:25 - A Disciplina [Validação e Teste de Software] foi persistida corretamente!
+2019-05-04 14:28:23 INFO  ConsultaDisciplina:17 - Executando o método consultaPorId() da classe: ConsultaDisciplina
+2019-05-04 14:28:23 INFO  ConsultaDisciplina:37 - A consulta de disciplina por id foi bem sucedida!
+2019-05-04 14:31:46 INFO  PersisteProfessorTeste:39 - Executando o método persisteProfessorAlfaTest() da classe: PersisteProfessorTeste
+2019-05-04 14:31:46 INFO  PersisteProfessor:13 - Executando o método persisteProfessor() da classe: PersisteProfessor
+2019-05-04 14:31:47 INFO  PersisteProfessor:25 - O Professor [Gilmar] foi persistido corretamente!
+2019-05-04 14:32:00 INFO  ConsultaProfessor:16 - Executando o método consultaPorId() da classe: ConsultaProfessor
+2019-05-04 14:32:00 INFO  ConsultaProfessor:35 - A consulta de professor por id foi bem sucedida!

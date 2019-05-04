@@ -84,4 +84,30 @@ public class ExclusaoTeste {
         }
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void deletaDisciplinaAlfaTest(){
+        System.out.println("Executando o método deletaDisciplinaAlfaTest() da classe: " + this.getClass().getSimpleName());
+        boolean result;
+        try {
+            result = new DeletaDisciplina().deletaDisciplina(new Long(43));
+        } catch (Exception e){
+            result = false;
+            e.printStackTrace();
+        }
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void deletaProfessorAlfaTest(){
+        System.out.println("Executando o método deletaProfessorTest() da classe: " + this.getClass().getSimpleName());
+        boolean result;
+        try {
+            result = new DeletaProfessor().deletaProfessor(new Long(73));
+        } catch (Exception e){
+            result = false;
+            e.printStackTrace();
+        }
+        Assert.assertTrue(result);
+    }
 }
